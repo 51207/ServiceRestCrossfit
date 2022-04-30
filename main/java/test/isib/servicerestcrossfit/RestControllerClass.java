@@ -157,7 +157,7 @@ public class RestControllerClass{
     
     //*****Mis a jour des données du client*****
       //ex:  http://localhost:8081/apijson/DeleteClient/jack21
-       @DeleteMapping("/DeleteClient/{username}")
+       @DeleteMapping("/DeleteClient/{PreviousUsername}")
     public void DeleteClient(@PathVariable String PreviousUsername) {
 
         Clients c = clientservice.ForgotPassword(PreviousUsername);
